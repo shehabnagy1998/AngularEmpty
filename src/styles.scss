@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import '~@angular/material/_theming.scss';
+@include mat-core();
+
+@import './newTheme.scss';
+
+@mixin custom-component ($theme) {
+    
+}
+
+.my-theme {
+    @include angular-material-theme($newTheme);
+    @include custom-component($newTheme);
+}
